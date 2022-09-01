@@ -1,8 +1,4 @@
-<<<<<<< HEAD
 # GroupProjet
-=======
-# GroupProject_1
->>>>>>> 12a08b4c056d98cd7d9c5fc1c6d33a9954ee9ba2
 This is a collaborative project between Riley, Anthony, and Myself
 
 [--- THE SILVER SCREEN FILM MACHINE---]
