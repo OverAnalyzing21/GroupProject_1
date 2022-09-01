@@ -1,7 +1,20 @@
+fetch("https://youtube.googleapis.com/youtube/v3/search?part=snippet&channelId=UCWOSgEKGpS5C026lY4Y4KGw&maxResults=5&order=date&key=AIzaSyCGIZBfQ4i_XSNa-zBDrgmjkHV2Qbwb4DE")
+.then((data)=>{
+    return data.json()
+}).then((data)=>{
+    console.log(data)
+    let video = data.items
+    let videoContainer = document.querySelector(".hide")
+    for(video of videos){
+        videoContainer.innerHTML += '<img src="${video.snippet.thumbnails.default.url">'
+        
+    
+    }
+});
 /* LIST OF VARIABLES */	
 	
 	var questionState = 0;	//Keeps track of users place in quiz
-	var quizActive = true;	//True until last question is answered
+	var quizActive =     true;	//True until last question is answered
 		
 	var userStats =	[
 						0,	//sci-fi
@@ -193,7 +206,7 @@
 	
 	function setCustomPage() {
 		
-		var highestStatPosition = 3;	//highest stat defaults as 'horror'
+		var highestStatPosition = 0;	//highest stat defaults as 'horror'
 		
 		/* This statement loops through all personality stats and updates highestStatPosition based on a highest stat */
 		
@@ -210,7 +223,6 @@
 		quiz.style.display = "none";		
 	}
 	
-	/* BUILDS WEB PAGE AS PER RESULTS OF THE QUIZ */
 	
 	/* The following code manipulates the CSS based on the personality results */
 			
@@ -218,33 +230,40 @@
 		switch (personality) {
 			
 			case 0:	//horror code
+                results.style.display = "show"
 				results.style.display = "inline-block";
 				results.classList.add("horror");
                 body.background= "none";
+                body.backgroundImage = "url('https://image.tmdb.org/t/p/original/dQffamI8HYqwRLELTvo1YeH4rTG.jpg')";
                 body.backgroundColor = "#008080"
                 printResult.innerText = "horror";
-				break;
+                
+                
 				
 			case 1:		//comedy
 				results.style.display = "inline-block";
 				results.classList.add("comedy");
 				body.background = "none";
+                body.backgroundImage = "url('https://flxt.tmsimg.com/assets/p12356386_p_v8_ae.jpg')";
                 body.backgroundColor = "#008080";
+                body.backgroundSize = "contain"
                 printResult.innerText = "comedy";
-				break;
+			
 				
 			case 2:		//action
 				results.style.display = "inline-block";
 				results.classList.add("action");
 				body.background = "none";
+                body.backgroundImage = "url('https://m.media-amazon.com/images/M/MV5BZGIxODNjM2YtZjA5Mi00MjA5LTk2YjItODE0OWI5NThjNTBmXkEyXkFqcGdeQXVyNzQ1ODk3MTQ@._V1_.jpg')";
                 body.backgroundColor ="#008080";
 				printResult.innerText = "action";
-				break;
+				
 				
 			case 3:		//sci-fi
 				results.style.display = "inline-block";
 				results.classList.add("sci-fi");
 				body.background = "none";
+                body.backgroundImage = "url('http://3.bp.blogspot.com/-G3J5b3dDKBw/Ub4UwtRVy2I/AAAAAAAAHsw/yIkKlj_7PFI/s1600/EscapefromNYposter.jpg')";
                 body.backgroundColor = "#008080";
               printResult.innerText = "sci-fi";
 				break;

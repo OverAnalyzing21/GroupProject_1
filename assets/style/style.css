@@ -81,3 +81,7 @@ h1 {
 	cursor: pointer;
 }
 
+.hide {
+    display: none;
+}
+
