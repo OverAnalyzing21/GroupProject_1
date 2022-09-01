@@ -16,7 +16,7 @@ This is a collaborative project between Riley, Anthony, and Myself
 
    In this project, we wanted to find a way to assist people in figuring out what genre of movies might pique their interest in the form of a "personality quiz".
    Throughout the quiz, a participant will have to answer a small handful of serious and humorous questions in order to find their ideal genre of film.
-   APIs from YouTube and IMDB are provided at the end as well so participants can view trailers and reviews of movies they might have an interest in without
+   APIs from YouTube and IMDB will be provided at the end as well so participants can view trailers and reviews of movies they might have an interest in without
    even having to leave the page!
    
    
