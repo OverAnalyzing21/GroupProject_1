@@ -16,6 +16,10 @@ In this project, we wanted to find a way to assist people in figuring out what g
 
 
 
+
+
+
+
 Anthony- HTML/CSS/JS/Api stuff
 Melvin- HTML/Bulma
-Riley- Api
+Riley- Api/JS
